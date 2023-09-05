@@ -1,0 +1,7 @@
+django
+psycopg2
+Pillow
+djangorestframework
+django-filter
+django-cleanup
+django-webpack-loader

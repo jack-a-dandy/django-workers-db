@@ -1,0 +1,15 @@
+{% extends 'basic.html' %}
+{% load render_bundle from webpack_loader %}
+{% load static %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div id="workersTable">
+  <WorkersTable></WorkersTable>
+</div>
+ </div>
+{% render_bundle 'chunk-vendors' %}
+{% render_bundle 'list' %}
+{% endblock %}

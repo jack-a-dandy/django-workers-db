@@ -1,0 +1,14 @@
+{% extends 'basic.html' %}
+{% load render_bundle from webpack_loader %}
+{% load static %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div id="app">
+     <Tree></Tree>
+ </div>
+{% render_bundle 'chunk-vendors' %}
+{% render_bundle 'tree' %}
+{% endblock %}
